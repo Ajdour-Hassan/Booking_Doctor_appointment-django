@@ -1,0 +1,339 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta name="Doctor|Home" content="Booking your Doctor in Morooco easily">
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" href="{% static 'css/bootsrtap.min.css' %}" >
+        <link rel="stylesheet" href="{% static 'css/main.css' %}" >
+        <link rel="shortcut" href="{% static 'image/logo.png' %}">
+
+        <title> Tabib </title>
+
+    </head>
+    
+<body class="home">
+    <header>
+           <!--  Navbar is started here! -->
+        <nav class="navbar navbar-expand-sm  bg-dark navbar-dark fixed-top" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'home' %}"> Tabib </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="#navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="{% url 'home' %}" class="nav-link"> Candidates </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#explore-head-section" class="nav-link"> Consulte   </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#share-head-section" class="nav-link"> Register </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+        <!-- this is the navbar end_up -->
+        </header>
+
+        <!-- Home section -->
+        <header class ="home-section">
+           <div class="dark-overlay">
+               <div class="home-inner">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-lg-8">
+                               <div class="">
+                               <h3> Find your Doctor and take  </h3>
+                               <h3> and take a consiel for free! <h3>
+                               </div>
+                           </div>
+                           <div class="col-lg-4 register">
+                               <div class="card bg-success text-center card-from register">
+                                   <div class="card-body">
+                                       <h3>Sign Up Today </h3>
+                                       <p>fill this from to register</p>
+                                       <form class="from-group">
+                                           <div class="form-group"> 
+                                           <input type="text" placeholder="Username"
+                                           class="form-control form-control-lg">
+                                          </div>
+                                          <div class="form-group"> 
+                                           <input type="text" placeholder="Email"
+                                           class="form-control form-control-lg">
+                                           </div>
+                                           <div class="form-group"> 
+                                           <input type="text" placeholder="Password"
+                                           class="form-control form-control-lg">
+                                           </div>
+                                           <div class="form-group">
+                                           <input type="text" placeholder="Confirm Password"
+                                           class="form-control form-control-lg">
+                                           </div>
+                                           <div class="form-group"> </div>
+                                           <input type="submit" value="submit"
+                                            class="btn btn-outline-light btn-block mt-3"> 
+
+                                           <p class="color-dark mt-2"> Or Sign in with email or Facebook </p>
+                                           </div>
+                                       </form>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div> 
+               </div>
+           </div>
+    </header>
+
+  <header class="mt-5 items">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-3">
+           <input type="text" class="form-control" placeholder="Search">
+      
+        </div>
+        <div class="col-md-3">
+                <select class="custom-select">
+                   <option selected>City</option>
+                   <option value="1">Sale</option>
+                   <option value="2">Rabat</option>
+                   <option value="3">Casa</option>
+                   <option selected>fes</option>
+                   <option value="1">Agadir</option>
+                   <option value="2">Makknes</option>
+                   <option value="3">Taroudant</option>
+                 </select>
+        </div>
+        <div class="col-md-3">
+                 <select class="custom-select">
+                   <option selected>field</option>
+                   <option value="1">One</option>
+                   <option value="2">Two</option>
+                   <option value="3">Three</option>
+                 </select>
+        </div>
+        <div class="col-md-3">
+        <button type="submit" value="submit" class=" form-control btn btn-success btn-outline-light mb-3"> Search </button>
+        </div>
+        </div>
+        </div>
+    </header>
+
+    
+    <div class="mt-5">
+       {% block content %}
+
+
+
+      {% endblock content %}
+
+    </div>
+    
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey  lighten-5">
+  <div style="background-color: #21d192;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Company name</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">MDBootstrap</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">MDWordPress</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">BrandFlow</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">Your Account</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+<div class="border-bottom" style="background:#2c3e50; color: #f2f4f4 ">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text" href="#"> Tabib.com</a>
+  </div>
+</div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+     
+
+       <!-- JavaScript files-->
+        <script src="{% static 'Javascript/fontawsome-all.min.js' %}"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <!-- the end of Javascript files -->
+
+</body>
+</html>

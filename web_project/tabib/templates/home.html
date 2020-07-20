@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+
+  <div class="col-md-3">
+
+    <!--Empty field-->
+
+  </div>
+
+
+  <div class="col-md-6">
+  {% for item in items %}
+  <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{item.image.url}}" class="card-img-top" alt="" style="height:200px">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"> Name : {{item.username}}</h5>
+        <h5 class="card-title"> City : {{item.city}}</h5>
+        <h5 class="card-title"> Profession : {{item.specialist}} </h5>
+        <p class="card-text"> Price : {{item.price}} dhs</p>
+        <p class="card-text "> About : </p>
+        <p class="card-text">{{item.about}}</p>
+        <p class="card-text"><small class="text-muted"> Joined One month ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+ {% endfor %}
+</div>
+
+ 
+    <div class="col-md-3">
+    <!--  {% for item in items %}
+      <div class="card-deck">
+         <div class="card">
+             <img class="card-img-top" src="{{item.image.url}}" alt="Card image cap">
+             <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">{{item.field}}</p>
+                 <p class="card-text">{{item.about}}</p>
+               <p class="card-text"><small class="text-muted">Joined one week ago</small></p>
+               <a class="btn btn-success" href=""> find out more </a>
+             </div>
+             </div>
+         </div>
+        </div>
+        {% endfor %}  --> 
+    </div>
+
+
+</div>
+</div>
+
+
+
+{% endblock content %}

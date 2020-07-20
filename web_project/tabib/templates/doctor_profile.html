@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+
+    </div>
+
+    <div  class="col-md-6">
+    <div class="card" style="width: 40rem;">
+          <img class="img-circle" src="{{item_details.image.url}}" alt="Card image cap">
+        <div class="card-body">
+           <p class="card-text"> name : {{item_details.name}} </p>
+           <p class="card-text"> city : {{item_details.city}} </p>
+          <p class="card-text">  number phone :  {{item_details.number}}  </p>
+          <p class="card-text"> about :  {{item_details.about}}  </p>
+          <p class="card-text"> price :  {{item_details.price}}  </p>
+          <p class="card-text"> Doctor address :  {{item_details.address}}  </p>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-3">
+
+    </div>
+</div>
+</div>
+
+
+
+{% endblock content %}
+
