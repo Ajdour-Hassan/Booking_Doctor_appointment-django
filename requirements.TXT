@@ -1,0 +1,4 @@
+django
+pillow
+django-bootstrap4
+crispy_forms

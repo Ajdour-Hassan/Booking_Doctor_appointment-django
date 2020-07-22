@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+  <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{user.profile.image.url}}" class="card-img-top" alt="" style="height:200px">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"> Name : {{user.profile.username}}</h5>
+        <h5 class="card-title"> City : {{user.profile.city}}</h5>
+        <h5 class="card-title"> Profession : {{user.profile.specialist}} </h5>
+        <p class="card-text"> Price : {{user.profile.price}} dhs</p>
+        <p class="card-text "> About : {{user.profile.specialist}} </p>
+        <p class="card-text"> Specialist : {{user.profile.about}} </p>
+        <p class="card-text"><small class="text-muted"> Joined One month ago :
+           {{user.profile.joined|date:'d-m-Y'}}
+        </small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+</div>
+
+
+
+{% endblock %}

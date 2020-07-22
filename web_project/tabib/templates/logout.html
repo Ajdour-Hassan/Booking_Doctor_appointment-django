@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+
+ <div class="container mt-5">
+<div class="row">
+  <div class="col-md-2">
+  <!--Empy column-->
+  </div>
+<div class="col-md-8">
+<div class="card  text-center" >
+  <div class="card-header bg-success">
+    Log Out
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> You logged out Safely and Successfully! </h5>
+    <p class="card-text">Welcome to Diesefive platform </p>
+     <p class="card-text"> If Would you like to log in again click here:
+      <a href="{% url 'login' %}" class="text-green"> Sign in! </a> </p>
+     <p>Get connected with us via social media : </p>
+     <div class="col-md-6 col-lg-8 text-center text-md-right">
+        
+         <!-- Facebook -->
+          <a class="fb-ic" href="https://web.facebook.com/Diesefive-108255180913394/">
+            <i class="fab fa-facebook-f white-text mr-4" > </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href="https://www.instagram.com/Diesefive/">
+            <i class="fab fa-instagram white-text mr-4" > </i>
+          </a>
+
+         
+             <!-- Telegram -->
+           <a class="tw-ic" href="https://web.telegram.org/#/im?p=@diese5">
+            <i class="fab fa-telegram white-text mr-4"> </i>
+          </a>
+         
+          <!-- Google +-->
+          <a class="gplus-ic" href="https://www.youtube.com/channel/UCqDvKCHZD17a7O7WAQASTWw/featured?view_as=subscriber">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+        </div>
+
+    <a href="{% url 'home' %}" class="btn btn-success mt-4"> Back Home </a>
+  </div>
+  <div class="card-footer text-muted">
+   Diesefive.com
+  </div>
+</div>
+ </div>
+ 
+    <div class="col-md-2">
+      <!--Empy column-->
+    </div>
+
+</div>
+</div>
+{% endblock content %}

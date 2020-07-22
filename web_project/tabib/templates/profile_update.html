@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{message.tags}} text-center">
+    {{message}}
+</div>
+{% endfor %}
+{% endif %}
+<div class="container">
+ <div class="row">
+        <div class="col-md-3">
+
+        </div>
+          <div class="col-md-6">
+             <h4>Update your Profile Now!</h4>
+
+                <form method="POST" enctype="multipart/form-data">
+                      {% csrf_token %}
+                <div class="form-group">
+                     {{form.first_name|as_crispy_field}}
+                </div>
+
+               <div class="form-group">
+                   {{form.second_name|as_crispy_field}}
+               </div>
+
+                 <div class="form-group">
+                    {{form.email|as_crispy_field}}
+                 </div>
+
+               <button class="btn btn-success btn-active" type="submit"> Submit </button>
+        </form>
+
+          </div>
+        <div class="col-md-3">
+
+        </div>
+ </div>
+</div>
+
+{% endblock content %}
